@@ -1,0 +1,11 @@
+meyveler = ["elma", "armut", "kiraz", "muz"]
+
+# Enumerate methodunu kullanarak
+for index, meyve in enumerate(meyveler):
+    print("{}. indexte bulunan meyve: {}".format(index, meyve))
+
+# Output:
+# 0. indexte bulunan meyve: elma
+# 1. indexte bulunan meyve: armut
+# 2. indexte bulunan meyve: kiraz
+# 3. indexte bulunan meyve: muz
