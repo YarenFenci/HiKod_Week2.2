@@ -1,0 +1,20 @@
+liste = ["Python", True, 9, "3", 8.4, "Hi-Kod", "False", 4.7]
+
+# "3" değerine ulaşmak için indexleme
+print(liste[3])  # Output: "3"
+
+# "Hi-Kod" değerine ulaşmak için indexleme
+print(liste[5])  # Output: "Hi-Kod"
+
+# 4.7 değerine ulaşmak için indexleme
+print(liste[7])  # Output: 4.7
+
+# 9, "3", 8.4, "Hi-Kod" değerlerine ulaşmak için slicing
+print(liste[2:6])  # Output: [9, "3", 8.4, "Hi-Kod"]
+
+# 8.4, "Hi-Kod", "False", 4.7 değerlerine ulaşmak için slicing
+print(liste[4:])  # Output: [8.4, "Hi-Kod", "False", 4.7]
+
+# Verilen listede bulunan string veri tipindeki öğeleri yeni_liste isimli listeye ekleme
+yeni_liste = [item for item in liste if isinstance(item, str)]
+print(yeni_liste)  # Output: ["Python", "3", "Hi-Kod", "False"]
